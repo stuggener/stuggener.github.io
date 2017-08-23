@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head> 
+<head> 
     <meta charset="utf-8"> 
     <meta name="description" content="Beispiel-Seite mit exemplarischem Inhalt im Head-Element"> 
+  
     <meta name="keywords" content="example, html, head, meta"> 
+  
     <link rel="stylesheet" href="example.css"> 
     <link rel="start" href="https://wiki.selfhtml.org/wiki/HTML" title="HTML-Dokumentation"> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <title>Exemplarische Kopfdaten</title> 
-  </head> 
+</head> 
 <body>
+<div id="mapid" style="width: 600px; height: 400px;"></div>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 </body>
