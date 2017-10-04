@@ -43,7 +43,7 @@
 	url: "https://github.com/stuggener/stuggener.github.io/blob/master/Gebiete_WGS84_.geojson",
 	success: function(data) {
    	 	$(data.features).each(function(key, data) {
-			district_boundary.addData(data);
+			gebiete.addData(data);
     		});
 	}
 	}).error(function() {});
