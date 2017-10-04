@@ -45,7 +45,7 @@
 	}).addTo(mymap).bindPopup("Gebiet von Herrn XX");
 	
 	var ellipse = L.ellipse([47.38, 8.53], [100, 100], 90).addTo(map);
-// popup
+
 	var popup = L.popup();
 
 	function onMapClick(e) {
@@ -55,7 +55,7 @@
        			.openOn(mymap);
 	}
 
-	mymap.on('click', onMapClick);
+	mymap.on('click', onMapClick); 
 
 // funktioniert nicht...	
 	var myLayer = L.mapbox.featureLayer()
