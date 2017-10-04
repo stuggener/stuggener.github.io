@@ -16,6 +16,7 @@
 <body>
 	
 <div id="mapid" style="width: 700px; height: 500px;"></div>
+	
 <script>
 
 	var mymap = L.map('mapid').setView([47.388824, 8.530877], 13);
@@ -34,19 +35,6 @@
 		fillOpacity: 0.5,
 		radius: 1000
 	}).addTo(mymap).bindPopup("Gebiet von Herrn XX");
-	
-	var gebiete = new L.geoJson();
-		gebiete.addTo(map);
-
-	$.ajax({
-	dataType: "json",
-	url: "https://github.com/stuggener/stuggener.github.io/blob/master/Gebiete_WGS84_.geojson",
-	success: function(data) {
-   	 	$(data.features).each(function(key, data) {
-			gebiete.addData(data);
-    		});
-	}
-	}).error(function() {});
 		  
 </script>
 	
