@@ -12,6 +12,8 @@
      <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
 
+    <script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
+	
 </head> 
 <body>
 	
@@ -35,17 +37,8 @@
 		radius: 1000
 	}).addTo(mymap).bindPopup("Gebiet von Herrn XX");
 	
-	let xhr = new XMLHttpRequest();
-	xhr.open('GET', 'Gebiete_WGS84_');
-	xhr.setRequestHeader('Content-Type', 'application/json');
-	xhr.onload = function() {
-    		if (xhr.status === 200) {
-        		new L.geoJson(JSON.parse(xhr.responseText)).addTo(map);
-    		}
-	};
-	xhr.send();
-	
-	L.geoJSON(Gebiete_WGS84_).addTo(map);
+	var geojsonLayer = new L.GeoJSON.AJAX("Gebiete_WGS84_.geojson");       
+	geojsonLayer.addTo(map);
 		  
 </script>
 	
