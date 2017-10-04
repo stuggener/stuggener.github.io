@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
      <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-
-    <script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
 	
 </head> 
 <body>
@@ -37,8 +35,18 @@
 		radius: 1000
 	}).addTo(mymap).bindPopup("Gebiet von Herrn XX");
 	
-	var geojsonLayer = new L.GeoJSON.AJAX("Gebiete_WGS84_.geojson");       
-	geojsonLayer.addTo(map);
+	var gebiete = new L.geoJson();
+		gebiete.addTo(map);
+
+	$.ajax({
+	dataType: "json",
+	url: "https://github.com/stuggener/stuggener.github.io/blob/master/Gebiete_WGS84_.geojson",
+	success: function(data) {
+   	 	$(data.features).each(function(key, data) {
+			district_boundary.addData(data);
+    		});
+	}
+	}).error(function() {});
 		  
 </script>
 	
