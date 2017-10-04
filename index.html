@@ -34,8 +34,22 @@
 		fillColor: '#f03',
 		fillOpacity: 0.5,
 		radius: 1000
+	}).addTo(mymap).bindPopup("Raum Zürich /nsp Gebiet von Herrn XX");
+	
+	L.circle([47.38, 8.53], {
+		color: 'red',
+		fillColor: '#f03',
+		fillOpacity: 0.5,
+		radius: 1000
 	}).addTo(mymap).bindPopup("Gebiet von Herrn XX");
 	
+	function onMapClick(e) {
+    		alert("You clicked the map at " + e.latlng);
+		}
+
+	mymap.on('click', onMapClick);
+
+// funktioniert nicht...	
 	var myLayer = L.mapbox.featureLayer()
   		.loadURL('https://github.com/stuggener/stuggener.github.io/blob/master/Gebiete_WGS84_.geojson')
   		.addTo(map);
