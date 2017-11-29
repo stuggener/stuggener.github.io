@@ -30,6 +30,13 @@
 		id: 'mapbox.light'
 	}).addTo(mymap); 
 	
+	L.circle([47.5376, 9.09256], {
+		color: '#808fa2',
+		fillColor: '#808fa2',
+		fillOpacity: 0.5,
+		radius: 6000
+	}).addTo(mymap).bindPopup("Thurgau, Gebiet von XX Greuter");
+	
 	L.circle([46.95307, 7.45285], {
 		color: '#808fa2',
 		fillColor: '#808fa2',
@@ -45,10 +52,10 @@
 	}).addTo(mymap).bindPopup("Raum Dübedorf, Gebiet von XX Kappeler");
 	
 	L.circle([47.50746, 8.18001], {
-		color: '#808fa2',
-		fillColor: '#808fa2',
+		color: '#88843e',
+		fillColor: '#88843e',
 		fillOpacity: 0.5,
-		radius: 6000
+		radius: 10000
 	}).addTo(mymap).bindPopup("Limmattal, Fricktal und unteres Aaretal, Gebiet von XX Kluge");
 	
 	L.circle([47.42, 8.73], {
@@ -78,13 +85,6 @@
 		fillOpacity: 0.5,
 		radius: 30000
 	}).addTo(mymap).bindPopup("Ostschweiz, Gebiet von XX Bühler").bindLabel('Ostschweiz, Gebiet von XX Bühler');
-
-	L.circle([47.523415, 9.087544], {
-		color: '#505860',
-		fillColor: '#505860',
-		fillOpacity: 0.5,
-		radius: 10000
-	}).addTo(mymap).bindPopup("Thurgau, Gebiet von XX Greuter").bindLabel('Thurgau, Gebiet von XX Greuter');
 	
 //	var ellipse = L.ellipse([47.38, 8.53], [100, 100], 90).addTo(map);
 	
