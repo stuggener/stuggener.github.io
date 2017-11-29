@@ -30,6 +30,13 @@
 		id: 'mapbox.light'
 	}).addTo(mymap); 
 	
+	L.circle([47.50282, 8.73756], {
+		color: '#B17039',
+		fillColor: '#B17039',
+		fillOpacity: 0.5,
+		radius: 6000
+	}).addTo(mymap).bindPopup("Winterthur, Gebiet von Rosmarie Rossi");
+	
 	L.circle([47.58069, 9.29649], {
 		color: '#B17039',
 		fillColor: '#B17039',
