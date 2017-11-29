@@ -30,6 +30,13 @@
 		id: 'mapbox.light'
 	}).addTo(mymap); 
 	
+	L.circle([47.45, 8.73], {
+		color: '#756bb1',
+		fillColor: '#756bb1',
+		fillOpacity: 0.5,
+		radius: 9000
+	}).addTo(mymap).bindPopup("Raum Winterthur, Gebiet von XX Etter");
+	
 	L.circle([47.42, 8.73], {
 		color: '#756bb1',
 		fillColor: '#756bb1',
