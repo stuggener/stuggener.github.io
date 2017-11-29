@@ -20,7 +20,7 @@
 	
 <script>
 
-	var mymap = L.map('mapid').setView([46.80006, 8.26721], 7);
+	var mymap = L.map('mapid').setView([46.80006, 8.26721], 7.5);
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
@@ -30,117 +30,124 @@
 		id: 'mapbox.light'
 	}).addTo(mymap); 
 	
-	L.circle([47.55938, 8.66341], {
-		color: '#505860',
-		fillColor: '#505860',
-		fillOpacity: 0.5,
-		radius: 10000
-	}).addTo(mymap).bindPopup("Eglisau/Seuzach/Bülach und Umgebung, Gebiet von XX Zimmermann");
+//	 L.circle([47.55938, 8.66341], {
+//		color: '#505860',
+//		fillColor: '#505860',
+//		fillOpacity: 0.5,
+//		radius: 10000
+//	}).addTo(mymap).bindPopup("Eglisau/Seuzach/Bülach und Umgebung, Gebiet von XX Zimmermann");
 	
-	L.circle([47.30997, 8.30978], {
-		color: '#505860',
-		fillColor: '#505860',
-		fillOpacity: 0.5,
-		radius: 10000
-	}).addTo(mymap).bindPopup("Reusstal, Gebiet von XX Steinmann");
+//	L.circle([47.30997, 8.30978], {
+//		color: '#505860',
+//		fillColor: '#505860',
+//		fillOpacity: 0.5,
+//		radius: 10000
+//	}).addTo(mymap).bindPopup("Reusstal, Gebiet von XX Steinmann");
 	
 	L.circle([47.64134, 8.94424], {
 		color: '#505860',
 		fillColor: '#505860',
 		fillOpacity: 0.5,
 		radius: 6000
-	}).addTo(mymap).bindPopup("Umgebung Frauenfeld, Gebiet von XX Spielmann");
+	}).addTo(mymap).bindPopup("Thurgau West, Walter Spielmann");
 	
 	L.circle([47.30345, 8.66409], {
-		color: '#505860',
-		fillColor: '#505860',
-		fillOpacity: 0.5,
-		radius: 6000
-	}).addTo(mymap).bindPopup("rechtes Zürichseeufer bis Uster, Gebiet von XX Sorice");
-	
-	L.circle([47.18598, 8.11272], {
-		color: '#505860',
-		fillColor: '#505860',
-		fillOpacity: 0.5,
-		radius: 6000
-	}).addTo(mymap).bindPopup("Suhretal & Luzern, Gebiet von XX Sommerhalder");
-	
-	L.circle([47.53644, 8.47012], {
-		color: '#505860',
-		fillColor: '#505860',
-		fillOpacity: 0.5,
-		radius: 6000
-	}).addTo(mymap).bindPopup("unteres Glatttal, Gebiet von XX Schmid");
-	
-	L.circle([47.50282, 8.73756], {
-		color: '#B17039',
-		fillColor: '#B17039',
-		fillOpacity: 0.5,
-		radius: 6000
-	}).addTo(mymap).bindPopup("Stadt Winterthur, Gebiet von Rosmarie Rossi");
-	
-	L.circle([47.58069, 9.29649], {
-		color: '#B17039',
-		fillColor: '#B17039',
-		fillOpacity: 0.5,
-		radius: 6000
-	}).addTo(mymap).bindPopup("Bodensee, Gebiet von Tamara Knill");
-	
-	L.circle([47.5376, 9.09256], {
 		color: '#808fa2',
 		fillColor: '#808fa2',
 		fillOpacity: 0.5,
 		radius: 6000
-	}).addTo(mymap).bindPopup("Thurgau, Gebiet von XX Greuter");
+	}).addTo(mymap).bindPopup("Rechtes Zürichseeufer, Domenico Sorice");
+	
+	L.circle([47.18598, 8.11272], {
+		color: '#88843e',
+		fillColor: '#88843e',
+		fillOpacity: 0.5,
+		radius: 6000
+	}).addTo(mymap).bindPopup("Luzern/Sursee, Roland Sommerhalder");
+	
+	L.circle([47.53644, 8.47012], {
+		color: '#B17039',
+		fillColor: '#B17039',
+		fillOpacity: 0.5,
+		radius: 6000
+	}).addTo(mymap).bindPopup("Zürich / Dielsdorf, Richard Schmid");
+	
+//	L.circle([47.50282, 8.73756], {
+//		color: '#B17039',
+//		fillColor: '#B17039',
+//		fillOpacity: 0.5,
+//		radius: 6000
+//	}).addTo(mymap).bindPopup("Stadt Winterthur, Gebiet von Rosmarie Rossi");
+	
+//	L.circle([47.58069, 9.29649], {
+//		color: '#B17039',
+//		fillColor: '#B17039',
+//		fillOpacity: 0.5,
+//		radius: 6000
+//	}).addTo(mymap).bindPopup("Bodensee, Gebiet von Tamara Knill");
+	
+	L.circle([47.5376, 9.09256], {
+		color: '#505860',
+		fillColor: '#505860',
+		fillOpacity: 0.5,
+		radius: 6000
+	}).addTo(mymap).bindPopup("Thurgau Ost / St.Gallen, Gerold Greuter");
 	
 	L.circle([46.95307, 7.45285], {
 		color: '#808fa2',
 		fillColor: '#808fa2',
 		fillOpacity: 0.5,
 		radius: 6000
-	}).addTo(mymap).bindPopup("Stadt Bern, Gebiet von Marco Fuoli");
+	}).addTo(mymap).bindPopup("Bern/Solothurn, Marco Fuoli");
 	
 	L.circle([47.39905, 8.62255], {
 		color: '#808fa2',
 		fillColor: '#808fa2',
 		fillOpacity: 0.5,
 		radius: 6000
-	}).addTo(mymap).bindPopup("Umgebung Dübedorf, Gebiet von XX Kappeler");
+	}).addTo(mymap).bindPopup("Zürich / Glattal, Walter Kappeler");
 	
 	L.circle([47.50746, 8.18001], {
 		color: '#88843e',
 		fillColor: '#88843e',
 		fillOpacity: 0.5,
 		radius: 20000
-	}).addTo(mymap).bindPopup("Limmattal, Fricktal und unteres Aaretal, Gebiet von XX Kluge");
+	}).addTo(mymap).bindPopup("Limmattal, Fricktal und unteres Aaretal, Gerd Kluge");
 	
 	L.circle([47.42, 8.73], {
-		color: '#756bb1',
-		fillColor: '#756bb1',
+		color: '#B17039',
+		fillColor: '#B17039 ',
 		fillOpacity: 0.5,
 		radius: 9000
-	}).addTo(mymap).bindPopup("Umgebung Winterthur, Gebiet von XX Etter");
+	}).addTo(mymap).bindPopup("Umgebung Winterthur, Marcel Etter");
 	
 	L.circle([47.27, 8.50], {
 		color: '#9ebcda',
 		fillColor: '#9ebcda',
 		fillOpacity: 0.5,
 		radius: 10000
-	}).addTo(mymap).bindPopup("Linkes Zürichsee Ufer, Gebiet von Victor Brunner");
+	}).addTo(mymap).bindPopup("Linkes Zürichseeufer, Victor Brunner");
 	
 	L.circle([46.75, 7.9], {
 		color: '#c51b8a',
 		fillColor: '#c51b8a',
 		fillOpacity: 0.5,
 		radius: 25000
-	}).addTo(mymap).bindPopup("Berner Oberland, Gebiet von XX Frutiger");
+	}).addTo(mymap).bindPopup("Berner Oberland, Andreas Frutiger");
 	
-	L.circle([47.12715, 9.18457], {
-		color: '#993404',
-		fillColor: '#993404',
+	L.circle([46.4582, 8.84056], {
+		color: '#c51b8a',
+		fillColor: '#c51b8a',
 		fillOpacity: 0.5,
-		radius: 30000
-	}).addTo(mymap).bindPopup("Ostschweiz, Gebiet von XX Bühler").bindLabel('Ostschweiz, Gebiet von XX Bühler');
+		radius: 25000
+	}).addTo(mymap).bindPopup("Tessin / Süd-Bünden, Daniele Auderset");
+	
+//	L.circle([47.12715, 9.18457], {
+//		color: '#993404',
+//		fillColor: '#993404',
+//		fillOpacity: 0.5,
+//		radius: 30000
+//	}).addTo(mymap).bindPopup("Ostschweiz, Gebiet von XX Bühler").bindLabel('Ostschweiz, Gebiet von XX Bühler');
 	
 //	var ellipse = L.ellipse([47.38, 8.53], [100, 100], 90).addTo(map);
 	
