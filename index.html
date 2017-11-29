@@ -20,7 +20,7 @@
 	
 <script>
 
-	var mymap = L.map('mapid').setView([46.80006, 8.26721], 7);
+	var mymap = L.map('mapid').setView([46.80006, 8.26721], 8);
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
@@ -43,6 +43,13 @@
 		fillOpacity: 0.5,
 		radius: 6000
 	}).addTo(mymap).bindPopup("Raum Dübedorf, Gebiet von XX Kappeler");
+	
+	L.circle([47.50746, 8.18001], {
+		color: '#808fa2',
+		fillColor: '#808fa2',
+		fillOpacity: 0.5,
+		radius: 6000
+	}).addTo(mymap).bindPopup("Limmattal, Fricktal und unteres Aaretal, Gebiet von XX Kluge");
 	
 	L.circle([47.42, 8.73], {
 		color: '#756bb1',
